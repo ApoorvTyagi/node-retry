@@ -14,7 +14,6 @@ axios.interceptors.response.use(
      * on the error we need to check request config to handle
      * retry feature.
      */
-
      const statusCode = error.response.status
      const currentRetryCount = error.response.config.currentRetryCount ?? 0
      const totalRetry = error.response.config.retryCount ?? 0

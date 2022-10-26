@@ -1,11 +1,11 @@
 const express = require('express');
 const axios = require('axios');
-require('./interceptor');
+require('./src/interceptor');
 
 const app = express();
 const port = 3000;
 
-const sendRequest= async () => {
+const sendRequest = async () => {
     const requestConfig = {
         method: 'get',
         url: 'https://mock.codes/503',
